@@ -26,8 +26,7 @@ listDirectory (const char *path, const char *cur_prefix, summary_t *summary)
     char *full_path, *segment, *pointer, *next_prefix;
     size_t size = 0;
     size_t index;
-
-    int fileLevel = 3; // offset
+  
     DIR *d = opendir(path); // directory variable
     struct dirent *dir; // struct to store data about directory/file
 
